@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News & Broadcast — Kaden Wittig</title>
+  <meta name="description" content="Kaden Wittig — Broadcast news photojournalist and editor. KJRH-TV Tulsa (NBC), 2022–2024. OU Nightly, 2024–2026." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="index.html">KMW</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-header">
+    <h1 class="page-title">News &amp; Broadcast</h1>
+    <p style="font-family: var(--sans); font-size: 10px; font-weight: 300; letter-spacing: 0.2em; color: var(--muted); margin-top: 12px; text-transform: uppercase;">Photojournalist &nbsp;·&nbsp; Editor &nbsp;·&nbsp; Camera Operator</p>
+  </div>
+
+  <div style="padding: 0 40px 80px; max-width: 1200px;">
+
+    <!-- KJRH -->
+    <div style="margin-bottom: 72px;">
+      <p class="credits-label" style="margin-bottom: 4px;">KJRH-TV Tulsa &nbsp;·&nbsp; NBC</p>
+      <p style="font-family: var(--sans); font-size: 10px; font-weight: 300; letter-spacing: 0.1em; color: var(--muted); margin-bottom: 20px;">News Photographer / Editor &nbsp;·&nbsp; 2022–2024</p>
+      <p class="project-description" style="font-size: 16px;">
+        Filmed news stories using professional-grade video equipment, including breaking news,
+        reporter packages, severe weather coverage, and various VOSOTs. Edited newscasts and
+        packages using Final Cut Pro. Set up live shots for broadcast using TVU Live transmitters,
+        recorded and conducted interviews with police, fire, city officials, event organizers, and
+        MOS interviews, and monitored police scanner traffic to identify and respond to breaking
+        news. Also drove and operated the 2 News Storm Chaser truck for live shots during severe
+        weather coverage.
+      </p>
+    </div>
+
+    <!-- OU NIGHTLY -->
+    <div style="margin-bottom: 64px;">
+      <p class="credits-label" style="margin-bottom: 4px;">OU Nightly</p>
+      <p style="font-family: var(--sans); font-size: 10px; font-weight: 300; letter-spacing: 0.1em; color: var(--muted); margin-bottom: 20px;">Production Crew &nbsp;·&nbsp; 2024–2026</p>
+      <p class="project-description" style="font-size: 16px; margin-bottom: 64px;">
+        Served primarily as a live videographer and video producer on OU Nightly, the University
+        of Oklahoma's student-run broadcast news program. As a videographer, led student crews
+        and ensured high-quality live video, including composition, audio, and lighting setup.
+        As a video producer, responsible for editing video segments for the newscast using
+        Adobe Premiere Pro.
+      </p>
+    </div>
+
+    <!-- PLAYLIST -->
+    <div style="margin-bottom: 64px;">
+      <p class="credits-label" style="margin-bottom: 20px;">Work Samples &nbsp;·&nbsp; KJRH-TV</p>
+      <div class="reel-video reel-thumb" onclick="playReel(this)">
+        <img src="images/thumb-news.jpg" alt="News & Broadcast Work Samples" style="width:100%;height:100%;object-fit:cover;" />
+        <div class="play-overlay">&#9654;</div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Kaden Wittig</p>
+    <p><a href="index.html" style="color: inherit;">← Back to Work</a></p>
+  </footer>
+
+<script>
+function playReel(el) {
+  el.innerHTML = '<iframe src="https://www.youtube.com/embed/videoseries?list=PLCGLGYCL9sZQxBc0j3xK6zqcfPMtAE5gg&autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:100%;height:100%;border:none;"></iframe>';
+  el.onclick = null;
+  el.style.cursor = 'default';
+}
+</script>
+</body>
+</html>

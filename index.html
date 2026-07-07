@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaden Wittig — Filmmaker &amp; Cinematographer</title>
+  <meta name="description" content="Kaden Wittig — Award-winning independent filmmaker, writer/director, and video production professional." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="index.html">KMW</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <!-- Background video -->
+    <video
+      class="hero-video"
+      src="720reel.mp4"
+      autoplay
+      muted
+      loop
+      playsinline>
+    </video>
+    <!-- Dark overlay -->
+    <div class="hero-overlay"></div>
+
+    <p class="hero-title">Filmmaker</p>
+    <h1 class="hero-name">Kaden Wittig</h1>
+    <p class="hero-sub">Writer &nbsp;·&nbsp; Director &nbsp;·&nbsp; Video Production Professional</p>
+    <div class="hero-scroll">Scroll</div>
+  </section>
+
+  <!-- REELS -->
+  <p class="section-label">Reels</p>
+
+  <div class="reels-grid" style="padding: 0 40px 60px;">
+
+    <div class="reel-item">
+      <div class="reel-video reel-thumb" onclick="playReel(this,'4au8uB-dacU')">
+        <img src="images/thumb-cinematography.jpg" alt="Cinematography Reel" style="width:100%;height:100%;object-fit:cover;" />
+        <div class="play-overlay">&#9654;</div>
+      </div>
+      <p class="reel-title">Cinematography Reel</p>
+      <p class="reel-desc">2026 &nbsp;·&nbsp; Director of Photography &nbsp;·&nbsp; <a href="https://youtu.be/4au8uB-dacU" target="_blank" rel="noopener" style="color: #888; border-bottom: 1px solid #333;">Watch on YouTube →</a></p>
+    </div>
+
+    <div class="reel-item">
+      <div class="reel-video reel-thumb" onclick="playReel(this,'U2veivRJjQE')">
+        <img src="images/thumb-commercial.jpg" alt="Commercial & Corporate Reel" style="width:100%;height:100%;object-fit:cover;" />
+        <div class="play-overlay">&#9654;</div>
+      </div>
+      <p class="reel-title">Commercial &amp; Corporate Reel</p>
+      <p class="reel-desc">2026 &nbsp;·&nbsp; Director / DP &nbsp;·&nbsp; <a href="https://youtu.be/U2veivRJjQE" target="_blank" rel="noopener" style="color: #888; border-bottom: 1px solid #333;">Watch on YouTube →</a></p>
+    </div>
+
+  </div>
+
+  <!-- WORK -->
+  <p class="section-label">Selected Work</p>
+
+  <div class="work-grid">
+
+    <!-- PROJECT 1: From a Distance -->
+    <a class="work-item" href="project-from-a-distance.html">
+      <img src="images/thumb-from-a-distance.jpg" alt="From a Distance" />
+      <div class="work-info">
+        <p class="work-title">From a Distance</p>
+        <p class="work-meta">2026 &nbsp;·&nbsp; Narrative Short &nbsp;·&nbsp; Writer / Director</p>
+      </div>
+    </a>
+
+    <!-- PROJECT 2: Pillar Documentary -->
+    <a class="work-item" href="project-pillar.html">
+      <img src="images/thumb-pillar.jpg" alt="Pillar: Beyond the Frontline" />
+      <div class="work-info">
+        <p class="work-title">Pillar: Beyond the Frontline</p>
+        <p class="work-meta">2026 &nbsp;·&nbsp; Feature Documentary &nbsp;·&nbsp; Director</p>
+      </div>
+    </a>
+
+    <!-- PROJECT 3: Where the Flowers Bloom -->
+    <a class="work-item" href="project-where-the-flowers-bloom.html">
+      <img src="images/thumb-where-the-flowers-bloom.jpg" alt="Where the Flowers Bloom" />
+      <div class="work-info">
+        <p class="work-title">Where the Flowers Bloom</p>
+        <p class="work-meta">2025 &nbsp;·&nbsp; Narrative Short &nbsp;·&nbsp; Writer / Director</p>
+      </div>
+    </a>
+
+    <!-- PROJECT 4: Up(LIFTING) -->
+    <a class="work-item" href="project-uplifting.html">
+      <img src="images/thumb-uplifting.jpg" alt="Up(LIFTING)" />
+      <div class="work-info">
+        <p class="work-title">Up(LIFTING)</p>
+        <p class="work-meta">2025 &nbsp;·&nbsp; Narrative Short &nbsp;·&nbsp; Writer / Director</p>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Kaden Wittig</p>
+    <p>Triangle Rock Productions</p>
+  </footer>
+
+<script>
+function playReel(el, id) {
+  el.innerHTML = '<iframe src="https://www.youtube.com/embed/' + id + '?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:100%;height:100%;border:none;"></iframe>';
+  el.onclick = null;
+  el.style.cursor = 'default';
+}
+</script>
+</body>
+</html>
