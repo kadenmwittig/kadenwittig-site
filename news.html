@@ -56,12 +56,75 @@
       </p>
     </div>
 
-    <!-- PLAYLIST -->
+    <!-- VIDEO GRID -->
     <div style="margin-bottom: 64px;">
-      <p class="credits-label" style="margin-bottom: 20px;">Work Samples &nbsp;·&nbsp; KJRH-TV</p>
-      <div class="reel-video reel-thumb" onclick="playReel(this)">
-        <img src="images/thumb-news.jpg" alt="News & Broadcast Work Samples" style="width:100%;height:100%;object-fit:cover;" />
-        <div class="play-overlay">&#9654;</div>
+      <p class="credits-label" style="margin-bottom: 24px;">Work Samples &nbsp;·&nbsp; KJRH-TV</p>
+      <div class="news-grid">
+
+        <div class="news-item" onclick="playVideo(this,'XlbSDaqkCmM')">
+          <div class="news-thumb">
+            <img src="https://img.youtube.com/vi/XlbSDaqkCmM/hqdefault.jpg" alt="Tulsa Pools & Splash Pads Opening" />
+            <div class="play-overlay">&#9654;</div>
+          </div>
+          <p class="news-title">Tulsa Pools &amp; Splash Pads Opening</p>
+        </div>
+
+        <div class="news-item" onclick="playVideo(this,'eLitkfaGNkQ')">
+          <div class="news-thumb">
+            <img src="https://img.youtube.com/vi/eLitkfaGNkQ/hqdefault.jpg" alt="Tulsa Homelessness Task Force" />
+            <div class="play-overlay">&#9654;</div>
+          </div>
+          <p class="news-title">Tulsa Homelessness Task Force</p>
+        </div>
+
+        <div class="news-item" onclick="playVideo(this,'6aDfy20uLVY')">
+          <div class="news-thumb">
+            <img src="https://img.youtube.com/vi/6aDfy20uLVY/hqdefault.jpg" alt="Wickliffe Bridge Project Safety Concerns" />
+            <div class="play-overlay">&#9654;</div>
+          </div>
+          <p class="news-title">Wickliffe Bridge Project Safety Concerns</p>
+        </div>
+
+        <div class="news-item" onclick="playVideo(this,'E3ajveFUKFk')">
+          <div class="news-thumb">
+            <img src="https://img.youtube.com/vi/E3ajveFUKFk/hqdefault.jpg" alt="WWII Veteran Celebrates 100th Birthday" />
+            <div class="play-overlay">&#9654;</div>
+          </div>
+          <p class="news-title">WWII Veteran Celebrates 100th Birthday</p>
+        </div>
+
+        <div class="news-item" onclick="playVideo(this,'h82YRpTSGmc')">
+          <div class="news-thumb">
+            <img src="https://img.youtube.com/vi/h82YRpTSGmc/hqdefault.jpg" alt="Broken Arrow Police Department Crime Map" />
+            <div class="play-overlay">&#9654;</div>
+          </div>
+          <p class="news-title">Broken Arrow PD Crime Map</p>
+        </div>
+
+        <div class="news-item" onclick="playVideo(this,'2crjrlSNcrA')">
+          <div class="news-thumb">
+            <img src="https://img.youtube.com/vi/2crjrlSNcrA/hqdefault.jpg" alt="Man Charged After Standoff with Bixby Police" />
+            <div class="play-overlay">&#9654;</div>
+          </div>
+          <p class="news-title">Standoff with Bixby Police</p>
+        </div>
+
+        <div class="news-item" onclick="playVideo(this,'Kcd8fRWGn9M')">
+          <div class="news-thumb">
+            <img src="https://img.youtube.com/vi/Kcd8fRWGn9M/hqdefault.jpg" alt="Coweta Brothers Making Spirits Bright" />
+            <div class="play-overlay">&#9654;</div>
+          </div>
+          <p class="news-title">Coweta Brothers Making Spirits Bright</p>
+        </div>
+
+        <div class="news-item" onclick="playVideo(this,'TcngmsorAfI')">
+          <div class="news-thumb">
+            <img src="https://img.youtube.com/vi/TcngmsorAfI/hqdefault.jpg" alt="Car Windows Blown Out by Tornado in Claremore" />
+            <div class="play-overlay">&#9654;</div>
+          </div>
+          <p class="news-title">Tornado Damage in Claremore, Oklahoma</p>
+        </div>
+
       </div>
     </div>
 
@@ -73,8 +136,9 @@
   </footer>
 
 <script>
-function playReel(el) {
-  el.innerHTML = '<iframe src="https://www.youtube.com/embed/videoseries?list=PLCGLGYCL9sZQxBc0j3xK6zqcfPMtAE5gg&autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:100%;height:100%;border:none;"></iframe>';
+function playVideo(el, id) {
+  var thumb = el.querySelector('.news-thumb');
+  thumb.innerHTML = '<iframe src="https://www.youtube.com/embed/' + id + '?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:100%;height:100%;border:none;"></iframe>';
   el.onclick = null;
   el.style.cursor = 'default';
 }
